@@ -1,0 +1,76 @@
+<html>     
+
+ <head>
+ 
+ <title>Zadanie 1a </title> 
+ 
+ <script language="JavaScript">             
+
+ function WinOpen_Kulik_1()
+ 
+ { 
+window.open("Zdjęcie_1.html","obraz_1","toolbar=no,directories=no,menubar=no,height=400,width=280,top=400,left=400");            
+
+
+    }
+	
+	</script>
+	
+	
+   	<script type="text/JavaScript">
+	function WinOpen_Kulik_2()
+	{ 
+window.open("Zdjęcie_2.html","obraz_2","toolbar=no,directories=no,menubar=no,height=400,width=450,top=300,left=300");            
+
+
+    }
+	
+
+  
+	 </script>    
+
+
+   	<script type="text/JavaScript">
+	function WinOpen_Kulik_3()
+	{ 
+window.open("Zdjęcie_3.html","obraz_3","toolbar=no,directories=no,menubar=no,height=400,width=300,top=200,left=200");            
+
+
+    }
+	
+
+  
+	 </script>
+
+	<script type="text/JavaScript">
+	function WinOpen_Kulik_4()
+	{ 
+window.open("Zdjęcie_4.html","obraz_4","toolbar=no,directories=no,menubar=no,height=400,width=280,top=100,left=100");            
+
+
+    }
+	
+
+  
+	 </script>	 
+
+   
+
+	 </head> 
+	 
+	 <body>   
+	 
+	 <input type="button" name="button_1" value="Patyczak_1" onclick="WinOpen_Kulik_1(' ')">
+ 	  
+	 <input type="button" name="button_2" value="Patyczak_2" onclick="WinOpen_Kulik_2(' ')"> 
+	 
+	 <input type="button" name="button_3" value="Patyczak_3" onclick="WinOpen_Kulik_3(' ')"> 
+	 
+	 <input type="button" name="button_4" value="Patyczak_4" onclick="WinOpen_Kulik_4(' ')">
+
+<input type="button" value="close window" onclick="window.close()" />
+	  
+	  
+	  </body> 
+	  
+	  </html>
