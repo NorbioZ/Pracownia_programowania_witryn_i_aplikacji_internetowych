@@ -2,74 +2,198 @@
 
  <head>
  
- <title>Zadanie 1a </title> 
+ <title>index</title> 
  
  <script language="JavaScript">             
 
  function WinOpen_Kulik_1()
  
  { 
-window.open("Zdjęcie_1.html","obraz_1","toolbar=no,directories=no,menubar=no,height=400,width=280,top=400,left=400");            
+window.open("obraz.html","1","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script>  
+
+<script language="JavaScript">             
+
+ function WinOpen_Kulik_2()
+ 
+ { 
+window.open("1a_kod.txt","kod_1","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	</script> 
+	
+	<script language="JavaScript"> 
+ function WinOpen_Kulik_3()
+ 
+ { 
+window.open("Zadanie2.html","2","toolbar=no,directories=no,menubar=no,height=400,width=550,top=600,left=600");            
+
+
+    }
+	
+	
+	 </script> 	
+
+<script language="JavaScript"> 
+ function WinOpen_Kulik_4()
+ 
+ { 
+window.open("Zadanie3.html","3","toolbar=no,directories=no,menubar=no,height=600,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 	 
+	 
+	 <script language="JavaScript"> 
+ function WinOpen_Kulik_5()
+ 
+ { 
+window.open("Zadanie4.html","4","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 
+	 
+	 <script language="JavaScript"> 
+ function WinOpen_Kulik_6()
+ 
+ { 
+window.open("Zadanie5.html","5","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 
+	 
+	 <script language="JavaScript"> 
+ function WinOpen_Kulik_7()
+ 
+ { 
+window.open("Zadanie6.html","6","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 
+	 
+	 <script language="JavaScript"> 
+ function WinOpen_Kulik_8()
+ 
+ { 
+window.open("Zadanie7.html","7","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 
+	 
+	  <script language="JavaScript"> 
+ function WinOpen_Kulik_9()
+ 
+ { 
+window.open("Zadanie8.html","8","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 
+	 
+	  <script language="JavaScript"> 
+ function WinOpen_Kulik_10()
+ 
+ { 
+window.open("Zadanie8_kod.txt","9","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 
+	 
+	 <script language="JavaScript"> 
+ function WinOpen_Kulik_11()
+ 
+ { 
+window.open("Zadanie9.html","10","toolbar=no,directories=no,menubar=no,height=400,width=650,top=450,left=350");            
+
+
+    }
+	
+	
+	 </script> 
+
+    <script language="JavaScript"> 
+ function WinOpen_Kulik_12()
+ 
+ { 
+window.open("Zadanie9_kod.txt","11","toolbar=no,directories=no,menubar=no,height=400,width=450,top=650,left=350");            
 
 
     }
 	
 	</script>
-	
-	
-   	<script type="text/JavaScript">
-	function WinOpen_Kulik_2()
-	{ 
-window.open("Zdjęcie_2.html","obraz_2","toolbar=no,directories=no,menubar=no,height=400,width=450,top=300,left=300");            
-
-
-    }
-	
-
-  
-	 </script>    
-
-
-   	<script type="text/JavaScript">
-	function WinOpen_Kulik_3()
-	{ 
-window.open("Zdjęcie_3.html","obraz_3","toolbar=no,directories=no,menubar=no,height=400,width=300,top=200,left=200");            
-
-
-    }
-	
-
-  
-	 </script>
-
-	<script type="text/JavaScript">
-	function WinOpen_Kulik_4()
-	{ 
-window.open("Zdjęcie_4.html","obraz_4","toolbar=no,directories=no,menubar=no,height=400,width=280,top=100,left=100");            
-
-
-    }
-	
-
-  
-	 </script>	 
-
-   
 
 	 </head> 
 	 
-	 <body>   
+	  <style>
+         p{
+		 
+        font-size:2cm;
+		
+         text-align:center;}
+</style>	
 	 
-	 <input type="button" name="button_1" value="Patyczak_1" onclick="WinOpen_Kulik_1(' ')">
+	 <body> 
+
+      <p> Kulik </p>
+	  
+	 <form>
+	 
+	  <input type="button" name="button_1" value="obraz.html" onclick="WinOpen_Kulik_1(' ')"> 
+
+<input type="button" name="button_1a" value="Zadanie1a_Kulik" onclick="WinOpen_Kulik_2(' ')"> 	  
  	  
-	 <input type="button" name="button_2" value="Patyczak_2" onclick="WinOpen_Kulik_2(' ')"> 
-	 
-	 <input type="button" name="button_3" value="Patyczak_3" onclick="WinOpen_Kulik_3(' ')"> 
-	 
-	 <input type="button" name="button_4" value="Patyczak_4" onclick="WinOpen_Kulik_4(' ')">
+	  <input type="button" name="button_2" value="Zadanie2_Kulik" onclick="WinOpen_Kulik_3(' ')"> 
+	  
+	  <input type="button" name="button_3" value="Zadanie3_Kulik" onclick="WinOpen_Kulik_4(' ')">
+	  
+	  <input type="button" name="button_4" value="Zadanie4_Kulik" onclick="WinOpen_Kulik_5(' ')">
+	  
+	  <input type="button" name="button_5" value="Zadanie5_Kulik" onclick="WinOpen_Kulik_6(' ')">
+	  
+	  <input type="button" name="button_6" value="Zadanie6_Kulik" onclick="WinOpen_Kulik_7(' ')">
+	  
+	  <input type="button" name="button_7" value="Zadanie7_Kulik" onclick="WinOpen_Kulik_8(' ')">
+	  
+	  <input type="button" name="button_8" value="Zadanie8_Kulik" onclick="WinOpen_Kulik_9(' ')">
+	  
+	  <input type="button" name="button_8kod" value="Zadanie8kod_Kulik" onclick="WinOpen_Kulik_10(' ')">
+	  
+	   <input type="button" name="button_9" value="Zadanie9_Kulik" onclick="WinOpen_Kulik_11(' ')">
+	   
+	   <input type="button" name="button_9kod" value="Zadanie9kod_Kulik" onclick="WinOpen_Kulik_12(' ')">
+		 
+	   <input type="button" name="button_10" value="Zadanie10_Kulik" onclick="WinOpen_Kulik_13(' ')">
+		 
+	   <input type="button" name="button_10kod" value="Zadanie10kod_Kulik" onclick="WinOpen_Kulik_14(' ')">
 
 <input type="button" value="close window" onclick="window.close()" />
-	  
+	  </form> 
 	  
 	  </body> 
 	  
