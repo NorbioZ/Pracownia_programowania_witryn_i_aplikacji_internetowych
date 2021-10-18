@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+
+<script language="JavaScript">
+
+var mm=prompt("kul=","");
+
+var wynik;
+
+var m_kul=parseFloat(mm);
+
+wynik=(m_kul*2);
+
+document.write("1/"+m_kul+"=1/"+wynik+"+1/"+wynik);
+
+</script>
+
+</div>
+
+</body>
+
+</html>
