@@ -5,7 +5,7 @@
 		
 <script language="JavaScript">
 			
-var mm=prompt("K=","");
+var mm=prompt("kul=","");
 				
 var wynik;
 				
