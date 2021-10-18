@@ -1,0 +1,23 @@
+<html>  
+   <head>     
+       <title>Zadanie 15</title>       
+   </head>   
+    <body>              
+         <script language="JavaScript">
+
+                 var l1_kul=prompt(" x1","1");				 			 
+     var l2_kul=prompt(" x2","2");
+    var x1_kul=parseFloat(l1_kul);			 
+                 var x2_kul=parseFloat(l2_kul);
+       var K_kul= 3 * Math.pow ( x1_kul, ( 6 / 8 ));
+	   var K1_kul=( 2 * Math.cos ( x1_kul * Math.PI / 180 )) + ( 2 * Math.sin ( x1_kul*Math.PI / 180 ));
+                 var K3_kul= Math.cbrt ( Math.pow ( x1_kul, 5 ) + ( 2 * Math.pow ( x2_kul, 4 ))) * Math.abs ( x1_kul - x2_kul );
+        document.write("x1 = "+x1_kul);		
+    document.write("  |  x2 = "+x2_kul);				
+  document.write("<br><br> K = "+y_kul);				
+    document.write("<br>  K1 = "+K1_kul);				
+        document.write("<br>  K3 = "+K3_kul);
+         </script>         
+        </div>        
+    </body>    
+</html>
