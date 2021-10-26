@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>
+ Obwod i pole prostokata
+</title>
+ <script language="JavaScript">
+ 
+ 
+function Obwod_Kulik(F_kul,h_kul)
+
+
+{
+ F_liczba=parseFloat(F_kul)
+ 
+ 
+ h_liczba=parseFloat(h_kul)
+ 
+ 
+ Obwod_Kulik_wynik=2*F_liczba+2*h_liczba
+ 
+ 
+ document.getElementsByName('obj')[0].value=Obwod_Kulik_wynik.toFixed(2); 
+ 
+ 
+ 
+ alert("Obwod="+Obwod_Kulik_wynik.toFixed(2)+" cm"); 
+ 
+ 
+ P1.innerHTML="Obwod="+Obwod_Kulik_wynik.toFixed(2)+" cm"+"<br>"; 
+}
+
+
+
+function Pole_Kulik(F_kul,h_kul)
+
+
+{
+
+
+ F_liczba=parseFloat(F_kul)
+ 
+ 
+ h_liczba=parseFloat(h_kul)
+ 
+ 
+ Pole_kul_wynik=F_liczba*h_liczba
+ 
+ 
+ document.getElementsByName('pole')[0].value=Pole_Kulik_wynik.toFixed(2);
+ 
+ 
+ alert("Pole="+Pole_Kulik_wynik.toFixed(2)+" cm^2");
+ 
+  P2.innerHTML="Pole="+Pole_Kulik_wynik.toFixed(2)+"cm^2";
+}
+
+
+ </script>
+ 
+ 
+</head>
+
+
+<body>
+
+
+Obliczanie Obwodu i Pola prostokata
+
+
+<br>
+
+ <br>
+ 
+ 
+<form name="formularz" action="..." onsubmit="Obwod_Kulik(this.promien.value,this.wysokosc.value);
+Pole_Kulik(this.promien.value,this.wysokosc.value);return false">
+
+ a_Kulik= <input size="7" name="promien">
+
+
+ b_Kulik= <input size="7" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Obwod= <input size="7" name="obj">
+Pole= <input size="7" name="pole">
+
+
+</form>
+
+
+<table>
+
+<tr id="P1"></tr>
+
+<tr id="P2"></tr>
+
+
+</table>
+</body>
+</html>
