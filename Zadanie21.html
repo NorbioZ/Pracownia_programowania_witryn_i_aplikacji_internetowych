@@ -1,1 +1,52 @@
 
+<html>
+<head>
+<title>
+ Dlugosc drabiny
+</title>
+ <script language="JavaScript">
+ 
+ 
+function dlugosc_drabiny_Kulik(H_kul,x_kul)
+
+{
+ d=parseFloat(H_kul);
+ x=parseFloat(x_kul);
+ dlugosc_drabiny_Kulik_wynik=Math.sqrt((Math.pow(d,2))+(Math.pow(x,2)));
+ document.getElementsByName('dlg')[0].value=dlugosc_drabiny_Kulik_wynik.toFixed(2); 
+ alert("dlugosc drabiny="+dlugosc_drabiny_Kulik_wynik.toFixed(2)+" cm"); 
+ P1.innerHTML="dlugosc drabiny="+dlugosc_drabiny_Kulik_wynik.toFixed(2)+" cm"+"<br>"; 
+}
+function kat_Kulik(H_kul,x_kul)
+{
+ H=parseFloat(H_kul);
+ x=parseFloat(x_kul);
+ kat_Kulik_wynik=Math.atan(H/x)*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=kat_Kulik_wynik.toFixed(2);
+ alert("kąt nachylenia drabiny="+kat_Kulik_wynik.toFixed(2));
+ P2.innerHTML="kąt nachylenia drabiny="+kat_Kulik_wynik.toFixed(2);
+}
+ </script>
+</head>
+<body>
+Obliczamy długości drabiny i jej wysokości
+<br>
+ <br>
+<form name="formularz" action="..." onsubmit="dlugosc_drabiny_Kulik(this.H.value,this.x.value);
+kat_Kulik(this.H.value,this.x.value);return false">
+ H= <input size="7" name="H">
+ x= <input size="7" name="x">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+dlugoscdrabiny= <input size="7" name="dlg">
+Kat_nachylenia_drabiny= <input size="7" name="kat">
+</form>
+<table>
+<tr id="P1"></tr>
+<tr id="P2"></tr>
+</table>
+</body>
+</html>
