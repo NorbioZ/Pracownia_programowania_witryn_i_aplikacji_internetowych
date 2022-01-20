@@ -1,1 +1,24 @@
+<html>
+<head>
+ <script language="JavaScript">
+function test(){
+var x=prompt("podaj liczbę x=","");
+const b=prompt("slowo:","");
 
+ var a=parseFloat(x);
+ if(a==1||b=="czerwony"){
+ document.write("<font size=7; color=red>Czerwony</font>");
+ }
+ else if(a==2||b=="niebieski"){
+ document.write("<font size=1; color=blue>Niebieski</font>");
+ }
+ }
+ </script>
+</head>
+<body>
+<font color="green"><h2>Menu</h2></font>
+<h3> <font color="red">1 - czerwony </font></h3>
+<h3> <font color="blue">2 - niebieski </font></h3>
+<input id="przycisk" type="button" value="clickme" onclick="test();" />
+</body>
+</html>
