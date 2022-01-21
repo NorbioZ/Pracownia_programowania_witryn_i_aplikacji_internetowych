@@ -12,8 +12,34 @@ telefon_wyswietl_Kulik: function ()
 }
 telefon.telefon_wyswietl_Kulik();
 telefon.gwarancja=2;
-telefon.wypisz=function() {alert('Gwarancja: ' + this.gwarancja + 'lata')}
-telefon.wypisz();
+telefon.telefon_pokaz_Kulik=function() {alert('Gwarancja: ' + this.gwarancja + 'lata')}
+telefon.telefon_pokaz_Kulik();
+ </script>
+ </head>
+<body>
+</body>
+</html>
+......
+<html>
+ <head>
+ <script type="text/javascript">
+ function klient(ekran_dotykowy,wejście_USB_c,firma_samsung)//początek konstruktora
+{
+this.ekran=ekran_dotykowy;
+this.wejście=wejście_USB_c;
+ this.firma=firma_samsung;
+}//koniec konstruktora
+ klient.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.ekran + ' ' + this.wejście+ ' ' + this.firma);
+ };
+var telefon1 = new klient("Dotykowy", "wejście_USB_c", "samsung"); // nowy obiekt osoba1
+var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');
+osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+osoba2.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod);
  </script>
  </head>
 <body>
