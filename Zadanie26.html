@@ -5,17 +5,18 @@
  ekran: 'Dotykowy',
 wejście: 'USB typu c',
 firma: 'samsung',
+model: 'Galaxy S9',
 telefon_wyswietl_Kulik: function ()
 {
  document.write(this.ekran + ' ' + this.wejście)
  }
 }
 telefon.telefon_wyswietl_Kulik();
+telefon.gwarancja=2;
+telefon.wypisz=function() {alert('Gwarancja: ' + this.gwarancja + 'lata')}
+telefon.wypisz();
  </script>
  </head>
 <body>
-<br>
-
 </body>
 </html>
-
