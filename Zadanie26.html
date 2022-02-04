@@ -1,47 +1,27 @@
+
 <html>
  <head>
  <script type="text/javascript">
- var telefon = {
- ekran: 'Dotykowy',
-wejście: 'USB typu c',
-firma: 'samsung',
-telefon_wyswietl_Kulik: function ()
+ function telefon(dotykowy,android,samsung)
 {
- document.write(this.ekran + ' ' + this.wejście)
- }
+this.ekran=dotykowy;
+this.system=android;
+this.firma=samsung;
 }
-telefon.telefon_wyswietl_Kulik();
-telefon.gwarancja=2;
-telefon.telefon_pokaz_Kulik=function() {alert('Gwarancja: ' + this.gwarancja + 'lata')}
-telefon.telefon_pokaz_Kulik();
- </script>
- </head>
-<body>
-</body>
-</html>
-......
-<html>
- <head>
- <script type="text/javascript">
- function klient(ekran_dotykowy,wejście_USB_c,firma_samsung)//początek konstruktora
-{
-this.ekran=ekran_dotykowy;
-this.wejście=wejście_USB_c;
- this.firma=firma_samsung;
-}//koniec konstruktora
- klient.prototype.wypisz = function () //definicja metody
+ telefon.prototype.telefon_pokaz_Kulik = function () 
  {
- alert(this.ekran + ' ' + this.wejście+ ' ' + this.firma);
+ alert(this.ekran + ' ' + this.system+ ' ' + this.firma);
  };
-var telefon1 = new klient("Dotykowy", "wejście_USB_c", "samsung"); // nowy obiekt osoba1
-var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');
-osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
-osoba2.wypisz();
+var telefon1 = new telefon("dotykowy", "android", "samsung"); 
+var telefon2 = new klient('Ndotykowy', 'ios', 'iphone');
+telefon1.telefon_wypisz_Kulik(); 
+telefon2.telefon_wypisz_Kulik();
  document.write("dostęp do właściwości"+"<br>");
-// poniżej dostęp do pól osoby1
- document.write("klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod);
+ document.write("telefon pierwszy"+" "+telefon1.ekran+" "+telefon1.system+" "+telefon1.firma);
  </script>
  </head>
 <body>
+<br>
+ programowanie obiektowe 
 </body>
 </html>
