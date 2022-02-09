@@ -1,43 +1,27 @@
-
 <html>
  <head>
  <script type="text/javascript">
-  var telefon = {
-ekran: 'dotykowy',
-system: 'android',
-firma: 'samsung',
-telefon_wyswietl_Kulik: function ()
-{
- document.write(this.ekran + ' ' + this.system)
- }
-}
- telefon.telefon_wyswietl_Kulik();
-telefon.gwarancja=2;
-telefon.telefon_pokaz_Kulik=function() {alert('gwarancja: ' + this.gwarancja + 'lata')}
-telefon.telefon_pokaz_Kulik();
-<html>
- <head>
- <script type="text/javascript">
- function telefon(ekran_t,system_t,firma_t)
+ function telefon(ekran_t,system_t,firma_t,wejscie_t)
 {
 this.ekran=ekran_t;
 this.system=system_t;
 this.firma=firma_t;
+this.wejscie=wejscie_t;
 }
  telefon.prototype.telefon_pokaz_Kulik = function () 
  {
- alert(this.ekran + ' ' + this.system+ ' ' + this.firma);
+ alert(this.ekran + ' ' + this.system+ ' ' + this.firma+ ' ' + this.wejscie);
  };
-var telefon1 = new telefon("dotykowy", "android", "samsung"); 
-var telefon2 = new telefon('bezdotykowy', 'ios', 'apple');
+var telefon1 = new telefon("bezdotykowy", "android", "samsung", "USB A"); 
+var telefon2 = new telefon("dotykowy", "ios", "apple", "USB C");
+var telefon3 = new telefon("bezdotykowy", "azingo", "motorola", "USB A");
 telefon1.telefon_pokaz_Kulik(); 
 telefon2.telefon_pokaz_Kulik();
- document.write("dostęp do właściwości"+"<br>");
- document.write("telefon pierwszy"+" "+telefon1.ekran+" "+telefon1.system+" "+telefon1.firma);
+telefon3.telefon_pokaz_Kulik();
+ document.write("właściwości: "+"<br>");
+ document.write("telefon pierwszy"+" "+telefon1.ekran+" "+telefon1.system+" "+telefon1.firma+" "+telefon1.wejscie+"<br>");
+ document.write("telefon drugi"+" "+telefon2.ekran+" "+telefon2.system+" "+telefon2.firma+" "+telefon2.wejscie+"<br>");
+ document.write("telefon trzeci"+" "+telefon3.ekran+" "+telefon3.system+" "+telefon3.firma+" "+telefon3.wejscie+"<br>");
  </script>
  </head>
-<body>
-<br>
- programowanie obiektowe 
-</body>
 </html>
