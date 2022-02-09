@@ -2,6 +2,19 @@
 <html>
  <head>
  <script type="text/javascript">
+  var telefon = {
+ekran: 'dotykowy',
+system: 'android',
+firma: 'samsung',
+telefon_wyswietl_Kulik: function ()
+{
+ document.write(this.ekran + ' ' + this.system)
+ }
+}
+ telefon.telefon_wyswietl_Kulik();
+telefon.gwarancja=2;
+telefon.telefon_pokaz_Kulik=function() {alert('gwarancja: ' + this.gwarancja + 'lata')}
+telefon.telefon_pokaz_Kulik();
  function telefon(dotykowy,android,samsung)
 {
 this.ekran=dotykowy;
