@@ -15,20 +15,23 @@ telefon_wyswietl_Kulik: function ()
 telefon.gwarancja=2;
 telefon.telefon_pokaz_Kulik=function() {alert('gwarancja: ' + this.gwarancja + 'lata')}
 telefon.telefon_pokaz_Kulik();
- function telefon(dotykowy,android,samsung)
+<html>
+ <head>
+ <script type="text/javascript">
+ function telefon(ekran_t,system_t,firma_t)
 {
-this.ekran=dotykowy;
-this.system=android;
-this.firma=samsung;
+this.ekran=ekran_t;
+this.system=system_t;
+this.firma=firma_t;
 }
  telefon.prototype.telefon_pokaz_Kulik = function () 
  {
  alert(this.ekran + ' ' + this.system+ ' ' + this.firma);
  };
 var telefon1 = new telefon("dotykowy", "android", "samsung"); 
-var telefon2 = new telefon('dotykowy', 'ios', 'iphone');
-telefon1.telefon_wypisz_Kulik(); 
-telefon2.telefon_wypisz_Kulik();
+var telefon2 = new telefon('bezdotykowy', 'ios', 'apple');
+telefon1.telefon_pokaz_Kulik(); 
+telefon2.telefon_pokaz_Kulik();
  document.write("dostęp do właściwości"+"<br>");
  document.write("telefon pierwszy"+" "+telefon1.ekran+" "+telefon1.system+" "+telefon1.firma);
  </script>
