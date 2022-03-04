@@ -1,0 +1,65 @@
+<html>  
+   <head>      
+       <title>Zadanie 58</title>       
+   </head>   
+   <body>
+     <h1> 1) Co to są pseudoklasyk?</h1><br>
+CSS przewiduje kilka ściśle określonych klas pozwalających na formatowanie niektórych elementów dokumentu są to Pseudoklasy.<br>
+2)Uwaga dotycząca dwukropka:<br>
+uwaga dotycząca dwukropka:<br>
+Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy selektorem a nazwą klasy.<br>
+3)Tabela opisującą pseudoklasy.<br>
+A:link,<br>
+odpowiada za wygląd hiperłącza, jeżeli nie zostało ono jeszcze odwiedzone.<br>
+A:visited,<br>
+odpowiada za formatowanie hiperłącza już odwiedzonego.<br>
+A:hover,<br>
+zmiany pewnych elementów po najechaniu na nie urządzeniem wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kursor lub element blokowy DIV.<br>
+A:active,<br>
+pozwala nadać dowolne formatowanie elementowi po nakierowaniu na niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego zwolnieniem (odsyłacz aktywny kliknięty).<br>
+A:focus,<br>
+jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był formatowany innym kolorem. Odsyłacz posiadający tzw fokus-zaznaczony przy poruszaniu się po dokumencie przy pomocy klawisza tabulacji: <br>
+     naciśnięcie w tym momencie klawisza ENTER spowoduje taką reakcję przeglądarki, jakby dany odsyłacz został kliknięty.<br>
+:lang<br>
+formatowanie wielojęzykowych dokumentów.<br>
+:first-child<br>
+umożliwia określenie formatowania dla pierwszego dziecka wybranego elementu.<br>
+4)Zastosowanie pseudoklasy :active<br>
+-można używać jako uzupełnienia definicji odnośników<br>
+-jako elementu poprawiającego czytelność formularzy.<br>
+5)Przykłady (trzy) kodów definiowania pseudoklas (wraz z tematem)<br>
+Temat: Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem<br>
+A:link<br>
+{<br>
+color:red;<br>
+}<br>
+A:visited<br>
+{<br>
+color:green;<br>
+}<br>
+Temat: Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.<br>
+A /* Definicja odsyłacza podstawowego*/<br>
+{<br>
+font-size:12pt;<br>
+text-decoration:none;<br>
+}<br>
+A:link<br>
+{<br>
+color:navy;<br>
+}<br>
+A:visited<br>
+{<br>
+color:green;<br>
+}<br>
+A:hover<br>
+{<br>
+color:red;<br>
+text-decoration:underline;<br>
+}<br>
+Temat: Zastosowanie :focus<br>
+A:focus<br>
+{<br>
+color:braun;<br>
+}<br>
+  </body>
+</html>
