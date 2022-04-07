@@ -1,0 +1,10 @@
+#blok1_kulik,#blok2_kulik,#blok3_kulik{
+
+	width:612px;
+	background:green;
+}
+#blok1_kulik:hover {background:orange;font-size:19mm;}
+#blok2_kulik:hover {background:lime;font-size:19mm;}
+#blok3_kulik:hover {background:gold;font-size:19mm;}
+/* hover; Po najechaniu myszką na objęty element strony, zostaną wykonane podane polecenia
+* zapisz Twoje Norbert Kulik*/
