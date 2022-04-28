@@ -4,26 +4,28 @@
  <script language="JavaScript">
  function pushbutton() {
  alert("Czesc !");}
-    function imie(){
- alert("Norbert");
- }
  </script>
 </head> 
 <body> 
-Ostatnio zmodyfikowany 
+ <div id="zmodyfikowano">
+Ostatnio zmodyfikowano 
 <script language="LiveScript">
  document.write(document.lastModified,"<br>")
 </script>
+ </div>
 <form>
  <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
 </form> 
+  <div id="czas">
 <script language="JavaScript">
  dzis = new Date()
  document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+   </script>
+    </div>
+  <div id="data">
+ <script language="JavaScript">
  document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
 </script>
-  <form>
-	<input type="button" name="imie" value="Imie ucznia" onclick="imie()">
-</form>
+   </div>
 </body> 
 </html>
