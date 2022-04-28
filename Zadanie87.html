@@ -9,20 +9,20 @@ pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
 function  Przycisk2_kulik()
 {
 data_kul = new Date();
- pokaz2.innerHTML="Aktualna data: "+data_kul.getDate()+"-"+data_kul.getUTCMonth()+1+"-"+data_kul.getFullYear());
+ pokaz2.innerHTML="Aktualna data: "+data_kul.getDate()+"-"+data_kul.getUTCMonth()+1+"-"+data_kul.getFullYear();
 }
 function Przycisk3_kulik()
 {
 czas_kul = new Date();
- pokaz3.innerHTML="Aktualny czas: "+czas_kul.getHours()+":"+czas_kul.getMinutes());
+ pokaz3.innerHTML="Aktualny czas: "+czas_kul.getHours()+":"+czas_kul.getMinutes();
 }
 </script>
 </head>
 <body>
  <form>
-   <a onclick="Przycisk1_kulik()"><img src="p1.png" alt="Przycisk1" border="0" /></a>
-   <a onclick="Przycisk2_kulik()"><img src="p2.png" alt="Przycisk2" border="0" /></a>
-   <a onclick="Przycisk3_kulik()"><img src="p3.png" alt="Przycisk3" border="0" /></a>
+   <a onclick="Przycisk1_kulik(' ')"><img src="p1.png" alt="Przycisk1" border="0" /></a>
+   <a onclick="Przycisk2_kulik(' ')"><img src="p2.png" alt="Przycisk2" border="0" /></a>
+   <a onclick="Przycisk3_kulik(' ')"><img src="p3.png" alt="Przycisk3" border="0" /></a>
  </form>
 <table>
 <tr id="pokaz1"></tr>
