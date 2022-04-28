@@ -1,37 +1,29 @@
 <html>
 <head>
-    <title>Zadanie 6a</title>
+    <title>
+        Zadanie 85  
+    </title>
     <script language="JavaScript">
- function Przycisk1_kulik() 
-{
-pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+ function przycisk1_kucz(){
+ document.write(document.lastModified,"<br>");
 } 
-function  Przycisk2_kulik()
-{
-data_kul = new Date();
- pokaz2.innerHTML="Aktualna data: "+data_kul.getDate()+"-"+data_kul.getUTCMonth()+1+"-"+data_kul.getFullYear());
+function  przycisk2_kucz(){
+dzis_kuc = new Date();
+ document.write("Dzisiejsza data : ",dzis_kuc.getDate(),"-",dzis_kuc.getUTCMonth()+1,"-",dzis_kuc.getFullYear());
 }
-function Przycisk3_kul()
-{
-czas_kul = new Date();
- pokaz3.innerHTML="Aktualny czas: "+czas_kul.getHours()+":"+czas_kul.getMinutes());
+
+
+function przycisk3_kucz(){
+godz_kuc = new Date();
+ document.write("Godzina: ",godz_kuc.getHours(),":",godz_kuc.getMinutes());
 }
 </script>
 </head>
 <body>
- <form>
-<img src="p1.png" onclick="Przycisk1_kulik()"><br>
-   <a onclick="Przycisk2_kulik(' ')"><img src="p2.png" alt="Przycisk2" border="0" 
-onmouseover="this.src = 'p2.png'" onmouseout="this.src ='p2.png'" /></a>
-   <a onclick="Przycisk3_kulik(' ')"><img src="p3.png" alt="Przycisk3" border="0" 
-onmouseover="this.src = 'p3.png'" onmouseout="this.src ='p3.png'" /></a>
- </form>
-<table>
-<tr id="pokaz1"></tr>
-<tr id="pokaz2"></tr>
-<tr id="pokaz3"></tr>
-</table>
-
+ <img src="p1.png" onclick="przycisk1_kucz()"><br>
+ <img src="p2.png" onclick="przycisk2_kucz()"><br>
+ <img src="p3.png" onclick="przycisk3_kucz()"><br>
+ 
  
 </body>
 </html>
