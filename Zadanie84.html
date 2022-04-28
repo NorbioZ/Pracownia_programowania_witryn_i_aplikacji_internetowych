@@ -1,34 +1,24 @@
 <html>
-	<head>
-		<title>Zadanie 84 </title>
-		<script language="JavaScript">
-		function dni_kucz(dzien,miesiac,rok) // function dni_kowalski(dzien,miesiac,rok)
+<head>
+<title>Zadanie 4</title>
+<script language="JavaScript">
+function dni_kulik(dzien,miesiac,rok)
  {
-const d_liczba=parseFloat(dzien); // zamiana tekstu na liczbę, tekst który był parametrem funkcji
+const d_liczba=parseFloat(dzien); 
 const m_liczba=parseFloat(miesiac);
 const r_liczba=parseFloat(rok);
-var dzis=new Date(); // utworzenie obiektu z dzisiejszą datą
+var dzis=new Date(); 
 var urodziny=new Date(r_liczba,m_liczba+1,d_liczba);
-// utworzenie obiektu z datą urodzin użytkownika
-// m_liczba-1 musi być -1 bo komputer styczeń=0
-var czyRok; // zmienne pomocnicze
+var czyRok;
 var czyMiesiac;
 var czyDzien;
 var ilosc_wynik=Math.floor((dzis-urodziny)/(10));
-// Math.floor- metoda matematyczna zaokrąglająca
-// różnica (dzis- urodziny) podaje wynik w milisekundach
-// musisz przeliczyć na dni, zapisz w miejsce znaków zapytania.
 document.getElementsByName('ilosc')[0].value=ilosc_wynik;
-// wyprowadzanie do okienka formularza
 alert(ilosc_wynik);
-// wyprowadzanie do okienka alert
 pokaz1.innerHTML="Ilość dni="+ilosc_wynik+" dni"+"<br>";
-// wyprowadzenie do tabeli
 czyRok = dzis.getFullYear();
 czyMiesiac = dzis.getMonth();
 czyDzien = dzis.getDate();
-// przypisanie dzisiejszej daty do zmiennych
-// teraz sprawdzanie warunków czy masz więcej czy mniej niż 18 lat
 if ((czyRok==(r_liczba+18))&&(czyMiesiac==(m_liczba+1))&&(czyDzien==d_liczba))
 {
 pokaz2.innerHTML="Masz dziś 18 urodziny!";
@@ -41,8 +31,7 @@ pokaz2.innerHTML="Nie masz jeszcze 18 lat!";
 }
 </script>
 	</head>
-	<body>
-	
+	<body>	
 	<form name="formularz">
 		Podaj dzień=
 		<input size="6" name="dzien">
