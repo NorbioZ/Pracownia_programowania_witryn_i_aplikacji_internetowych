@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title> Zadanie 5</title>
+    <script language="JavaScript">
+         function kulik_start(){
+        start_kul = new Date();
+ poczatek_kul=start_kul.getTime();
+ }
+ function kulik_stop(){
+ stop_kul = new Date();
+ koniec_kul=stop_kul.getTime()
+
+ roznica_kul=koniec_kul-poczatek_kul;
+ pokaz1.innerHTML=roznica_kul/1000+" s";
+} 
+</script>
+</head>
+<body>
+    <script>
+            dzis_kul = new Date();
+            document.write("<br>Aktualny czas : ",dzis_kul.getHours(),":",dzis_kul.getMinutes());
+    </script>
+    <input type="button" name="StartButton" value="START stoper" onclick="kulik_start()">
+    <input type="button" name="StopButton" value="STOP stoper" onclick="kulik_stop()">
+    <table tutaj obramowanie>
+        <tr id="pokaz1"></tr>
+       </table>
+</body>
+</html>
